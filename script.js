@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const email = document.getElementById('reg-email').value;
             const password = document.getElementById('reg-password').value;
 
-            console.log('Attempting to register with:', { username, email, password });
+            // console.log('Attempting to register with:', { username, email, password });
 
             try {
                 const response = await fetch('https://neodove-backend.onrender.com/api/auth/register', {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 const data = await response.json();
-                console.log('Register response:', data);
+                // console.log('Register response:', data);
 
                 if (data.success) {
                     alert('Registration successful');
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     alert('Registration failed: ' + data.error);
                 }
             } catch (error) {
-                console.error('Registration error:', error);
+                // console.error('Registration error:', error);
                 alert('Registration failed: ' + error.message);
             }
         });
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         ws.onmessage = (event) => {
             const msgData = JSON.parse(event.data);
-            console.log('Received message:', msgData);
+            // console.log('Received message:', msgData);
 
             const chatHistory = document.getElementById('chat-history');
             const msgElement = document.createElement('div');
