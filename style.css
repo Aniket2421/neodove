@@ -72,7 +72,6 @@ p a:hover {
     text-decoration: underline;
 }
 
-/* style.css */
 
 
 #login-page {
@@ -143,7 +142,6 @@ a:hover {
 .chat-footer {
     width: 100%;
     box-sizing: border-box;
-    /* Ensures padding and border are included in the element's total width */
 }
 
 #chat-history {
@@ -183,7 +181,6 @@ a:hover {
     align-items: center;
     border-top: 0px solid #ccc;
     padding: 10px;
-    /* Added padding for spacing */
 }
 
 .chat-footer input[type="text"] {
@@ -203,7 +200,6 @@ padding: 10px 15px;
     border-radius: 0 4px 4px 0;
     margin-left: -1px;
         width: 40%;
-    /* Adjusted margin for button alignment */
 }
 
 .chat-footer button:hover {
