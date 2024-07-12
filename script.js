@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (goToRegisterLink) {
         goToRegisterLink.addEventListener('click', function (event) {
             event.preventDefault();
-            window.location.href = 'register.html';
+            window.location.href = 'index.html';
         });
     }
 
