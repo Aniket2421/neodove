@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="chat">
+      <div class="chat-header">
+        <span id="chat-username">Username</span>
+        <div class="chat-header-actions">
+        <button id="logout">Logout</button>
+        </div>
+      </div>
+
+      <div id="chat-history">
+        <!-- Chat messages will be dynamically added here -->
+      </div>
+      <div class="chat-footer">
+        <input type="text" id="message" placeholder="Type a message" required />
+        <button id="send">Send</button>
+        <!-- <button id="logout">Logout</button> -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
